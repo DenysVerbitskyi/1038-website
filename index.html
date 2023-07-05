@@ -4,11 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hello HTML</title>
     <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
 </head>
 <body>
-    <img width="400" src="img/bear.jpg" alt="bear"/>
-    <h1>Hello HTML</h1>
+    <header>
+        <img src="img/header.jpg" alt="header image" style="width: 100%; height: auto;"/>
+        <img src="img/rectangle.png" alt="rect image" style="background-color: black; width: 400px; height: auto;"/>
+        
+        <nav>
+            <ul>
+                <li><a href="#"><h3>Home</h3></a></li>
+                <li><a href="#"><h3>Products</h3></a></li>
+                <li><a href="#"><h3>About</h3></a></li>
+                <li><a href="#"><h3>Contacts</h3></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section name="Features"">
+            <h2>Features</h2>
+            <p>
+                Most calendars are designed for teams. 
+                Slate is designed for freelancers
+            </p>
+            <div name="Features-drawing">
+                <img src="img/mdi_drawing.jpg" alt="features drawing">
+                <h3>OpenType features Variable fonts</h3>
+                <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
+            </div>
+            <div name="Features-draw">
+                <img src="img/mdi_draw.jpg" alt="features draw">
+                <h3>Design with real data</h3>
+                <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
+            </div>
+            <div name="Features-brush">
+                <img src="img/mdi_brush.jpg" alt="features brush">
+                <h3>Fastest way to take action</h3>
+                <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
+            </div>
+        </section>
+        <section name="pricing">
+            <div name="price">
+                <fieldset style="width: 200px;">
+                    <legend>Select your price plan: </legend>
+                    <label>
+                        <input type="radio" name="price_plan" id="priceplan5" value="5" checked>5$
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="price_plan" id="priceplan10" value="10">10$
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="price_plan" id="priceplan20" value="20">20$
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="price_plan" id="priceplan50" value="50">50$
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="price_plan" id="Other">
+                        <input type="text" name="price_plan" placeholder="Other">
+                    </label>
+                </fieldset>
+            </div>
+            <div name="currency_choose">
+                <label for="currency">Choose a currency for your payment:</label>
+                <select id="currency" name="currency">
+                    <option value="bitcoin">Bitcoin</option>
+                    <option value="euro">Euro</option>
+                    <option value="uah">Hryvna</option>
+                    <option value="dollar">Dollar</option>
+                </select>
+            </div>
+        </section>
+        <section name="contactus">
+            <div name="conactform">
+                <form>
+                    
+                    <input type="text" name="fname" id="fname" placeholder="First Name">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
 </body>
 </html>
